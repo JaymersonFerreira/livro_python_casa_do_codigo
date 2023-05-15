@@ -1,6 +1,6 @@
 '''Utilizamos a função da biblioteca padrão urllib.request.urlopen, a classe io,FileIO para escrevemos o arquivo binário de saída, um comando if e alguma chamada de função. as funcões contêm um while, um for'''
 
-#Programa que faz download dos arquivos de dados que usaremos daqui em diante
+#Programa que faz download dos arquivos de dados
 
 #coding: utf-8
 
@@ -36,7 +36,7 @@ def main():
     out_file = io.FileIO("saida.zip", mode="w")
 
     content_length = response.getheader('Content-Lengend')
-    if content_lenght:
+    if content_length:
         length = int(content_length)
         download_length(response, out_file, length)
     else:
