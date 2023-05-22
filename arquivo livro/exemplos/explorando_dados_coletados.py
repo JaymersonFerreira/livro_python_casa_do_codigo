@@ -11,7 +11,7 @@
 # if __name__ == "__main__":
 #     main()
 
-
+#com ele, podemos verificar se o seu nome esta no dicionario, a cda atributo para um entidade, Se estiver, segnifica que ess a entidade, cujos atributos de identificador é o valor do dicionario de identificador ara o nome da entidade. 
 import os
 
 def estract_name(name):
